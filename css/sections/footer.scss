@@ -1,0 +1,43 @@
+.footer {
+	@include bgpic("footer.jpg");
+	height: 60px;
+	font-size: 14px;
+	&__right {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	&__address {
+		color: #fff;
+		margin-bottom: 8px;
+		font-family: ubuntulight;
+	}
+	&__tel-img {
+		float: left;
+		margin-right: 5px;
+	}
+	&__tel-number {
+		font-family: ubuntubold;
+		color: $orange;
+	}
+}
+
+.socials {
+	font-size: 0;
+	&__item {
+		display: inline-block;
+		margin-left: 20px;
+	}
+	&__icon {
+		width: 20px;
+		height: 20px;
+	}
+	&__link {
+		opacity: 0.3;
+		transition: .3s;
+		&:hover {
+			opacity: 1;
+		}
+	}
+}

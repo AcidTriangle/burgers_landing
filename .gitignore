@@ -1,0 +1,4 @@
+*.sass
+*.config
+.git
+.idea

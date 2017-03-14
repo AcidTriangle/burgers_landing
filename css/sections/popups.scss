@@ -1,0 +1,30 @@
+.full-review {
+	padding: 30px 20px;
+	&__close {
+		float: right;
+		margin-top: -10px;
+	}
+	&__title {
+		margin-bottom: 30px;
+		font-family: gagalin;
+	}
+}
+
+.order-popup {
+	padding: 20px;
+	text-align: center;
+	&__msg {
+		margin-bottom: 20px;
+		white-space: nowrap;
+		&_error {
+			color: $red;
+		}
+	}
+}
+
+.popup {
+	font-size: 14px;
+	background: #fff;
+	border-radius: 5px;
+	display: none;
+}

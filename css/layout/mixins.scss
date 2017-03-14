@@ -1,0 +1,4 @@
+@mixin bgpic($path) {
+	background: url("../img/bg/"+$path) center center no-repeat;
+	background-size: cover;
+}

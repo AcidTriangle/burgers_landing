@@ -1,0 +1,25 @@
+.about {
+	@include bgpic("about.jpg");
+	text-align: center;
+	&__list {
+		margin-top: 90px;
+	}
+	&__item {
+		display: inline-block;
+		vertical-align: top;
+		width: 33%;
+	}
+	&__icon-pic{
+		width: 100px;
+		height: 100px;
+		display: inline-block;
+	}
+	&__title {
+		font-size: 24px;
+		font-family: lifehack;
+	}
+	&__text {
+		font-size: 14px;
+		
+	}
+}

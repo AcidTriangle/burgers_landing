@@ -1,0 +1,30 @@
+.hero {
+	@include bgpic("hero.jpg");
+	position: relative;
+	.container {
+		position: static;
+		transform: none;
+	}
+	&__content {
+		font-size: 0;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	&__left {
+		float: left;
+		width: 49%;
+	}
+	&__right {
+		margin-top: 130px;
+		float: left;
+		width: 51%;
+	}
+	&__desc {
+		margin-top: 7px;
+		line-height: 60px;
+		color: #fff;
+		font-family: 'lifehack';
+		font-size: 65px;
+	}
+}

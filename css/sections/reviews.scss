@@ -1,0 +1,55 @@
+.reviews {
+	background-color: #d5d5d5;
+	&__content {
+		height: 100%;
+	}
+	&__list {
+		width: 100%;
+		height: 100%;
+		font-size: 0;
+	}
+	&__item {
+		position: relative;
+		display: inline-block;
+		width: 25%;
+		height: 50%;
+		font-size: 14px;
+		color: #fff;
+		@for $i from 0 to 8 {
+			&:nth-child(#{$i+1}) .review__pic {
+				width: 100%;
+				height: 100%;
+				background: url("../img/content/photo#{$i+1}.png") no-repeat center center;
+				background-size: cover;
+			}
+		}
+		&:hover .review__hover{
+			transform: translate(-50%, -50%) scale(1);
+			opacity: 1;
+		}
+	}
+}
+
+.review {
+	width: 100%;
+	height: 100%;
+	&__hover {
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) scale(0.85);
+		transition: 0.3s;
+		width: 100%;
+		height: 100%;
+		padding: 50px 20px;
+		background-color: rgba(20, 20, 20, 0.7);
+	}
+	&__title {
+		font-family: gagalin;
+		margin-bottom: 30px;
+	}
+	&__text {
+		margin-bottom: 20px;
+	}
+}

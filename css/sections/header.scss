@@ -1,0 +1,51 @@
+.header {
+	padding-top: 12px;
+	&__logo {
+		float: left;
+		width: 25%;
+	}
+	&__menu {
+		float: left;
+		width: 75%;
+		text-align: right;
+		padding-top: 17px;
+		font-size: 0;
+	}
+}
+
+.nav {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0px;
+	&__item {
+		display: inline-block;
+		font-size: 13px;
+		margin-right: 15px;
+		&:after {
+			content: "";
+			display: inline-block;
+			width: 0;
+			margin-left: 15px;
+			border: 2px solid #fff;
+			border-radius: 50%;
+			vertical-align: middle;
+		}
+		&:last-child:after{
+			display: none;
+		}
+	}
+	&__link {
+		font-family: 'ubuntumedium';
+		text-transform: uppercase;
+		font-size: 13px;
+		vertical-align: middle;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.hero__order-link {
+	vertical-align: middle;
+	
+}

@@ -1,0 +1,72 @@
+.menu {
+	@include bgpic("menu.jpg");
+	position: relative;
+	&__title {
+		padding: 6% 8%;
+	}
+	&__list {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+	}
+	&__item {
+		float: left;
+		height: 100%;
+		&.active {
+			.menu__trigger {
+				color: $yellow;
+				&-title {
+					bottom: 20%;
+				}
+			}
+		}
+	}
+	&__trigger {
+		position: relative;
+		display: block;
+		float: left;
+		width: 80px;
+		height: 100%;
+		font-family: gagalin;
+		font-size: 40px;
+		&-title {
+			transition: .5s;
+			height: 80px;
+			width: 650px;
+			position: absolute;
+			left: -340%;
+			bottom: 50%;
+			white-space: nowrap;
+			transform: rotate(-90deg);
+			word-wrap: normal;
+			text-align: center;
+		}
+		&_meat {
+			background: url("../img/content/meat.png") no-repeat center center;
+			background-size: cover;
+		}
+		&_veg {
+			background: url("../img/content/vegan.png") no-repeat center center;
+			background-size: cover;
+		}
+		&_diet {
+			background: url("../img/content/diet.png") no-repeat center center;
+			background-size: cover;
+		}
+	}
+	&__content {
+		float: left;
+		height: 100%;
+		background-color: rgba(47, 50, 52, 0.93);
+		&-text {
+			padding: 35px 60px;
+			float: left;
+			width: 540px;
+			color: #fff;
+			font-size: 14px;
+			font-family: ubuntulight;
+			line-height: 24px;
+		}
+	}
+}
